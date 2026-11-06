@@ -2,6 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+plt.rcParams.update({
+    "font.size": 14,
+    "axes.titlesize": 16,
+    "axes.labelsize": 16,
+    "xtick.labelsize": 14,
+    "ytick.labelsize": 14,
+    "legend.fontsize": 14,
+})
+
 
 def neutron_yield(E_d, theta, Y0, Yi):
     """
@@ -521,6 +530,8 @@ def plot_handbook_energy_vs_angle_overlay(csv_path, E_d_values=None,
         plt.show()
 
     return fig, ax
+
+
 
 
 plot_handbook_energy_vs_angle_overlay(
